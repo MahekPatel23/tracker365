@@ -1,0 +1,203 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+.procurementManagement {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', 'Poppins', sans-serif;
+  background-color: #f8faff;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.pageHeading {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(to right, #347ad5, #1a2e45);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Main layout */
+.mainWrapper {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex: 1;
+}
+
+/* Left container with position adjustment */
+.container {
+  position: relative;
+  width: 460px;
+  height: 460px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.positionAdjust {
+  left: -150px;
+  top: 50px;
+  position: relative;
+}
+
+/* Center image */
+.centerImage {
+  width: 350px;
+  height: auto;
+  z-index: 10;
+}
+
+/* Floating cards wrapper */
+.floatingCards {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  pointer-events: auto;
+}
+
+/* Individual cards */
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(0.9);
+  transition: transform 0.3s ease;
+  animation: zoomIn 1s ease forwards, breathe 4s ease-in-out infinite;
+  pointer-events: auto;
+  z-index: 20;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Image size variants */
+.size50 {
+  width: 50px;
+  height: 50px;
+}
+.size60 {
+  width: 60px;
+  height: 60px;
+}
+.size80 {
+  width: 80px;
+  height: 80px;
+}
+.size10070 {
+  width: 70px;
+  height: 100px;
+}
+.size60100 {
+  width: 100px;
+  height: 60px;
+}
+
+/* Card positions */
+.card1 { --x: -133px; --y: -337px; }
+.card2 { --x: 18px; --y: -293px; }
+.card3 { --x: -135px; --y: -198px; }
+.card4 { --x: 160px; --y: -189px; }
+.card5 { --x: -87px; --y: -267px; }
+.card6 { --x: -230px; --y: -170px; }
+.card8 { --x: -200px; --y: -267px; }
+.card14 { --x: 139px; --y: -263px; }
+.card15 { --x: 6px; --y: -208px; }
+.card16 { --x: -20px; --y: -368px; }
+.card17 { --x: 97px; --y: -345px; }
+
+/* Animations */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.4) translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.9) translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
+    opacity: 1;
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(0.9);
+  }
+  50% {
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1.05);
+  }
+}
+
+/* Vertical dotted line */
+.dottedSeparator {
+  width: 2px;
+  height: 90vh;
+  border-left: 2px dotted #004aad;
+  margin: 0 20px;
+}
+
+/* Right list */
+.animationList {
+  max-height: 95vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  width: 500px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 80px;
+}
+
+.animationList::-webkit-scrollbar {
+  display: none;
+}
+
+.animationItem {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+  margin-bottom: 35px;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.animationItem.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animationItem strong {
+  display: block;
+  font-size: 17px;
+  color: #004aad;
+  margin-bottom: 6px;
+}
