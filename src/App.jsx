@@ -8,6 +8,7 @@ import SupportTicketManagement from "./components/SupportTicket/SupportTicket";
 import ServiceContractManagement from "./components/ServiceContractManagement/ServiceContractManagement";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import InquiryForm from "./components/InquiryForm/InquiryForm";
+import Footer from "./components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <ServiceContractManagement />
       <ServicesSection />
       <InquiryForm />
+      <Footer />
     </>
   );
 };
