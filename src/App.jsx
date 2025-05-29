@@ -7,6 +7,7 @@ import HardwareLifeCycle from "./components/HardwareLifeCycle/HardwareLifeCycle"
 import SupportTicketManagement from "./components/SupportTicket/SupportTicket";
 import ServiceContractManagement from "./components/ServiceContractManagement/ServiceContractManagement";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
+import InquiryForm from "./components/InquiryForm/InquiryForm";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <SupportTicketManagement />
       <ServiceContractManagement />
       <ServicesSection />
+      <InquiryForm />
     </>
   );
 };

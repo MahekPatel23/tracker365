@@ -1,0 +1,111 @@
+
+.inquiryForm {
+  margin: 0;
+  background-color: #f0f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f0f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.formSection {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 85, 170, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+.header {
+  background-color: #134884;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  border-radius: 10px 10px 0 0;
+}
+
+form {
+  padding: 40px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #002b5c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #cce6ff;
+  border-radius: 8px;
+  background-color: #f7fbff;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #66c2ff;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.submitContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submitBtn {
+  background-color: #004aad;
+  color: white;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #ffffff;
+  color: #004aad;
+  border: 1px solid black;
+}
+
+/* Responsive tweak for short viewports */
+@media (max-height: 600px) {
+  .formWrapper {
+    min-height: auto;
+    padding: 20px 0;
+    align-items: flex-start;
+  }
+}
