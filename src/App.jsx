@@ -5,6 +5,7 @@ import SoftwareSubscriptionManagement from './components/SoftwareSubscriptionMan
 import ProcurementManagement from './components/ProcurementManagement/ProcurementManagement';
 import HardwareLifeCycle from './components/HardwareLifeCycle/HardwareLifeCycle';
 import SupportTicketManagement from './components/SupportTicket/SupportTicket';
+import ServiceContractManagement from './components/ServiceContractManagement/ServiceContractManagement';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
     <ProcurementManagement />
     <HardwareLifeCycle />
     <SupportTicketManagement />
+    <ServiceContractManagement />
     </>
   );
 };
