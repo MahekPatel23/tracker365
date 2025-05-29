@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import SoftwareSubscriptionManagement from './components/SoftwareSubscriptionManagement/SoftwareSubscriptionManagement';
 import ProcurementManagement from './components/ProcurementManagement/ProcurementManagement';
 import HardwareLifeCycle from './components/HardwareLifeCycle/HardwareLifeCycle';
+import SupportTicketManagement from './components/SupportTicket/SupportTicket';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
     <SoftwareSubscriptionManagement />
     <ProcurementManagement />
     <HardwareLifeCycle />
+    <SupportTicketManagement />
     </>
   );
 };
