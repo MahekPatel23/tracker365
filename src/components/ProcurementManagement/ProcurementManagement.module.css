@@ -93,8 +93,8 @@
 }
 
 .card img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 50px;
   object-fit: contain;
 }
 
@@ -108,16 +108,16 @@
   height: 60px;
 }
 .size80 {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 .size10070 {
-  width: 70px;
-  height: 100px;
+  width: 60px;
+  height: 90px;
 }
 .size60100 {
-  width: 100px;
-  height: 60px;
+  width: 90px;
+  height: 50px;
 }
 
 /* Card positions */

@@ -24,7 +24,7 @@ const Header = () => {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.logo}>
-          <img src={logo} alt="Petpooja Payroll Logo" />
+          <img src={logo} alt="Software Tracker 365 Logo" />
         </div>
       </header>
 

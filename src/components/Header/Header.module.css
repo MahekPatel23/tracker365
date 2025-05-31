@@ -7,40 +7,41 @@ body {
 }
 
 /* Header */
-.header .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.header {
+  width: 100%;
+  background: #ffffff;
   padding: 20px;
-  background-color: #ffffff;
+  text-align: center;
 }
 
 .logo img {
   height: 100px;
-  width: 300px;
+  width: auto;
+  max-width: 300px;
 }
 
 /* Hero Section */
 .heroSection {
   text-align: center;
-  padding: 0px 20px;
+  padding: 20px;
   background-color: #ffffff;
 }
 
 .heroSection h2 {
   font-size: 36px;
   color: #003366;
+  margin-bottom: 20px;
 }
 
 .heroSection p {
   font-size: 23px;
-    font-weight: 400;
-    margin: 20px 0;
-    color:#546371;
-    line-height: 1.6;
-    padding: 15px 20px;
-    border-radius: 10px;
-    
+  font-weight: 400;
+  margin: 20px auto;
+  color: #546371;
+  line-height: 1.6;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 800px;
 }
 
 .ctaButton {
@@ -102,14 +103,15 @@ body {
 }
 
 .centerImage {
-position: absolute;
-top: 48%;
-left: 53%;
-transform: translate(-50%, -50%);
-width: 300px;
-height: 354px;
-border-radius: 50%;
-z-index: 1;
+  position: absolute;
+  top: 48%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 /* Rounded Cards */
@@ -144,62 +146,131 @@ z-index: 1;
   margin-bottom: 10px;
 }
 
-.card1 {
---x: -217px;
---y: -125px;
-}
-.card2 {
---x: -207px;
---y: 87px;
-}
-.card3 {
---x: 2px;
---y: -258px;
-}
-.card4 {
---x: 209px;
---y: -126px;
-}
-.card5 {
---x: 205px;
---y: 88px;
-}
-.card6 {
---x: -15px;
---y: 240px;
-}
+.card1 { --x: -217px; --y: -125px; }
+.card2 { --x: -207px; --y: 87px; }
+.card3 { --x: 2px; --y: -258px; }
+.card4 { --x: 209px; --y: -126px; }
+.card5 { --x: 205px; --y: 88px; }
+.card6 { --x: -15px; --y: 240px; }
 
 @keyframes rotate {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
-@keyframes zoomInFromOutsideTop {
-  0% { opacity: 0; transform: scale(0) translateY(-80px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .container {
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .card {
+    width: 110px;
+    height: 110px;
+    font-size: 11px;
+  }
+
+  .card i {
+    font-size: 24px;
+  }
+
+  .centerImage {
+    width: 250px;
+  }
+
+  .card1 { --x: -187px; --y: -105px; }
+  .card2 { --x: -177px; --y: 77px; }
+  .card3 { --x: 2px; --y: -218px; }
+  .card4 { --x: 179px; --y: -106px; }
+  .card5 { --x: 175px; --y: 78px; }
+  .card6 { --x: -15px; --y: 210px; }
 }
 
-@keyframes zoomInFromOutsideRight {
-  0% { opacity: 0; transform: scale(0) translateX(80px); }
-  100% { opacity: 1; transform: scale(1) translateX(0); }
+@media (max-width: 768px) {
+  .heroSection h2 {
+    font-size: 28px;
+  }
+
+  .heroSection p {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 340px;
+    height: 340px;
+    margin: 100px auto;
+  }
+
+  .card {
+    width: 90px;
+    height: 90px;
+    font-size: 10px;
+    padding: 15px;
+  }
+
+  .card i {
+    font-size: 20px;
+  }
+
+  .centerImage {
+    width: 200px;
+  }
+
+  .card1 { --x: -157px; --y: -85px; }
+  .card2 { --x: -147px; --y: 67px; }
+  .card3 { --x: 2px; --y: -188px; }
+  .card4 { --x: 149px; --y: -86px; }
+  .card5 { --x: 145px; --y: 68px; }
+  .card6 { --x: -15px; --y: 180px; }
 }
 
-@keyframes zoomInFromOutsideRightBottom {
-  0% { opacity: 0; transform: scale(0) translate(60px, 60px); }
-  100% { opacity: 1; transform: scale(1) translate(0, 0); }
-}
+@media (max-width: 576px) {
+  .logo img {
+    height: 80px;
+    max-width: 240px;
+  }
 
-@keyframes zoomInFromOutsideLeftBottom {
-  0% { opacity: 0; transform: scale(0) translate(-60px, 60px); }
-  100% { opacity: 1; transform: scale(1) translate(0, 0); }
-}
+  .heroSection h2 {
+    font-size: 24px;
+  }
 
-@keyframes zoomInFromOutsideLeft {
-  0% { opacity: 0; transform: scale(0) translateX(-80px); }
-  100% { opacity: 1; transform: scale(1) translateX(0); }
-}
+  .heroSection p {
+    font-size: 16px;
+  }
 
-@keyframes floatCard {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  .ctaButton {
+    width: 200px;
+    padding: 10px 20px;
+    margin: 30px 0;
+  }
+
+  .container {
+    max-width: 280px;
+    height: 280px;
+    margin: 80px auto;
+  }
+
+  .card {
+    width: 75px;
+    height: 75px;
+    font-size: 9px;
+    padding: 10px;
+  }
+
+  .card i {
+    font-size: 18px;
+  }
+
+  .centerImage {
+    width: 160px;
+  }
+
+  .card1 { --x: -127px; --y: -75px; }
+  .card2 { --x: -117px; --y: 57px; }
+  .card3 { --x: 2px; --y: -158px; }
+  .card4 { --x: 119px; --y: -76px; }
+  .card5 { --x: 115px; --y: 58px; }
+  .card6 { --x: -15px; --y: 150px; }
 }
