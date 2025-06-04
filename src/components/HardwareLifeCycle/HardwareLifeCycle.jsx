@@ -84,43 +84,43 @@ const HardwareLifeCycle = () => {
           />
           <div className={styles.floatingCards}>
             <div className={styles.card + " " + styles.card1 }>
-              <img src="/images/HardwareLifeCycle/h1.png" alt="card-0" />
+              <img src="/images/HardwareLifeCycle/h1.png" alt="card1" />
             </div>
             <div className={styles.card + " " + styles.card2}>
-              <img src="/images/HardwareLifeCycle/h12.png" alt="card-1" className={styles.img100} />
+              <img src="/images/HardwareLifeCycle/h12.png" alt="card2" className={styles.img100} />
             </div>
             <div className={styles.card + " " + styles.card3}>
-              <img src="/images/HardwareLifeCycle/h3.webp" alt="card-2" />
+              <img src="/images/HardwareLifeCycle/h3.webp" alt="card3" />
             </div>
             <div className={styles.card + " " + styles.card4}>
-              <img src="/images/HardwareLifeCycle/h5.png" alt="card-3" />
+              <img src="/images/HardwareLifeCycle/h5.png" alt="card4" />
             </div>
             <div className={styles.card + " " + styles.card5}>
-              <img src="/images/HardwareLifeCycle/h4.png" alt="card-4" className={styles.img60x60} />
+              <img src="/images/HardwareLifeCycle/h4.png" alt="card5" className={styles.img60x60} />
             </div>
             <div className={styles.card + " " + styles.card6}>
-              <img src="/images/HardwareLifeCycle/h6.png" alt="card-5" className={styles.img80x100} />
+              <img src="/images/HardwareLifeCycle/h6.png" alt="card6" className={styles.img80x100} />
             </div>
             <div className={styles.card + " " + styles.card7}>
-              <img src="/images/HardwareLifeCycle/h13.png" alt="card-6" className={styles.img90x90} />
+              <img src="/images/HardwareLifeCycle/h13.png" alt="card7" className={styles.img90x90} />
             </div>
             <div className={styles.card + " " + styles.card8}>
-              <img src="/images/HardwareLifeCycle/h2.png" alt="card-7" className={styles.img130x90} />
+              <img src="/images/HardwareLifeCycle/h2.png" alt="card8" className={styles.img130x90} />
             </div>
             <div className={styles.card + " " + styles.card9}>
-              <img src="/images/HardwareLifeCycle/h10.png" alt="card-8" className={styles.img60x80} />
+              <img src="/images/HardwareLifeCycle/h10.png" alt="card9" className={styles.img60x80} />
             </div>
             <div className={styles.card + " " + styles.card10}>
-              <img src="/images/HardwareLifeCycle/h8.png" alt="card-9" className={styles.img130} />
+              <img src="/images/HardwareLifeCycle/h8.png" alt="card10" className={styles.img130} />
             </div>
-            <div className={styles.card + " " + styles.card11}>
-              <img src="/images/HardwareLifeCycle/h15.png" alt="card-10" />
+            <div className={styles.card + " " + styles.card14}>
+              <img src="/images/HardwareLifeCycle/h15.png" alt="card14" />
             </div>
-            <div className={styles.card + " " + styles.card12}>
-              <img src="/images/HardwareLifeCycle/h11.png" alt="card-11" />
+            <div className={styles.card + " " + styles.card15}>
+              <img src="/images/HardwareLifeCycle/h11.png" alt="card15" />
             </div>
-            <div className={styles.card + " " + styles.card13}>
-              <img src="/images/HardwareLifeCycle/h7.png" alt="card-12" className={styles.img60x100} />
+            <div className={styles.card + " " + styles.card16}>
+              <img src="/images/HardwareLifeCycle/h7.png" alt="card16" className={styles.img60x100} />
             </div>
           </div>
         </div>

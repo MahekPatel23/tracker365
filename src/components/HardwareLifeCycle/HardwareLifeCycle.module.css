@@ -15,7 +15,7 @@
   background: linear-gradient(to right, #347ad5, #1a2e45);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 20px 0;
+  margin: 50px 0px;
   text-align: center;
 }
 
@@ -112,7 +112,6 @@
   height: 60px;
   width: 80px;
 }
-
 .card1 {
   --x: -133px;
   --y: -337px;

@@ -80,40 +80,85 @@ const ProcurementManagement = () => {
     <div className={styles.page}>
       <h1 className={styles.pageHeading}>PROCUREMENT MANAGEMENT</h1>
       <div className={styles.mainWrapper}>
-        {/* Left */}
-        <div className={styles.container}>
+        <div
+          className={styles.container}
+          style={{ left: "-150px", top: "50px" }}
+        >
           <img
             src="/images/ProcurementManagement/main.png"
             alt="Center Illustration"
             className={styles.centerImage}
           />
-          <div className={styles.floatingCards}>
-            {[
-              "p1",
-              "p2",
-              "p3",
-              "p4",
-              "p5",
-              "p6",
-              "p8",
-              "p11",
-              "p7",
-              "vendor-management",
-              "p12",
-            ].map((name, i) => (
-              <div
-                key={i}
-                className={`${styles.card} ${
-                  styles["card" + ((i + 1) % 18) || 17]
-                }`}
-              >
-                <img src={`/images/ProcurementManagement/${name}.png`} alt="" />
-              </div>
-            ))}
+          <div
+            className={styles.floatingCards}
+            style={{ display: "flex", flexDirection: "row", gap: "16px" }}
+          >
+            <div className={`${styles.card} ${styles.card1}`}>
+              <img src="/images/ProcurementManagement/p1.png" alt="" />
+            </div>
+            <div className={`${styles.card} ${styles.card2}`}>
+              <img
+                src="/images/ProcurementManagement/p2.png"
+                alt=""
+                style={{ height: "50px", width: "50px" }}
+              />
+            </div>
+            <div className={`${styles.card} ${styles.card3}`}>
+              <img src="/images/ProcurementManagement/p3.png" alt="" />
+            </div>
+            <div className={`${styles.card} ${styles.card4}`}>
+              <img src="/images/ProcurementManagement/p4.png" alt="" />
+            </div>
+            <div className={`${styles.card} ${styles.card5}`}>
+              <img
+                src="/images/ProcurementManagement/p5.png"
+                alt=""
+                style={{ height: "50px", width: "50px" }}
+              />
+            </div>
+            <div className={`${styles.card} ${styles.card6}`}>
+              <img
+                src="/images/ProcurementManagement/p6.png"
+                alt=""
+                style={{ height: "60px", width: "60px" }}
+              />
+            </div>
+            <div className={`${styles.card} ${styles.card8}`}>
+              <img
+                src="/images/ProcurementManagement/p8.png"
+                alt=""
+                style={{ height: "100px", width: "70px" }}
+              />
+            </div>
+            <div className={`${styles.card} ${styles.card14}`}>
+              <img
+                src="/images/ProcurementManagement/p11.png"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
+            </div>
+            <div className={`${styles.card} ${styles.card16}`}>
+              <img
+                src="/images/ProcurementManagement/p7.png"
+                alt=""
+                style={{ height: "60px", width: "100px" }}
+              />
+            </div>
+            <div className={`${styles.card} ${styles.card15}`}>
+              <img
+                src="/images/ProcurementManagement/vendor-management.png"
+                alt=""
+              />
+            </div>
+            <div className={`${styles.card} ${styles.card17}`}>
+              <img
+                src="/images/ProcurementManagement/p12.png"
+                alt=""
+                style={{ height: "50px", width: "50px" }}
+              />
+            </div>
           </div>
         </div>
-
-        {/* Dotted Line */}
         <div className={styles.dottedSeparator}></div>
 
         {/* Right */}
