@@ -31,7 +31,7 @@ const Header = () => {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.logo}>
-          <img src="/images/header/logo_blue.png" alt="Petpooja Payroll Logo" />
+          <img src="/images/Header/logo_blue.png" alt="Petpooja Payroll Logo" />
         </div>
       </header>
 
@@ -82,7 +82,7 @@ const Header = () => {
         </div>
 
         <img
-          src="/images/header/main_front_page_img.png"
+          src="/images/Header/main_front_page_img.png"
           alt="Girl Cartoon"
           className={styles.centerImage}
         />
