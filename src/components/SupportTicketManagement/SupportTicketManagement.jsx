@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from "./ProcurementManagement.module.css";
+import styles from "./SupportTicketManagement.module.css";
 
 const issues = [
   {
@@ -56,7 +56,7 @@ const issues = [
   },
 ];
 
-const ProcurementManagement = () => {
+const SupportTicketManagement = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -77,93 +77,62 @@ const ProcurementManagement = () => {
   }, []);
 
   return (
-    <div className={styles.page}>
-      <h1 className={styles.pageHeading}>PROCUREMENT MANAGEMENT</h1>
+    <div className={styles.wrapper}>
+      <h1 className={styles.heading}>SUPPORT TICKET MANAGEMENT</h1>
       <div className={styles.mainWrapper}>
-        <div
-          className={styles.container}
-          style={{ left: "-150px", top: "50px" }}
-        >
+        <div className={styles.container} style={{left: "-150px", top: "50px"}}>
           <img
-            src="/images/ProcurementManagement/main.png"
-            alt="Center Illustration"
             className={styles.centerImage}
+            src="/images/SupportTicketManagement/main.png"
+            alt="Center Illustration"
           />
-          <div
-            className={styles.floatingCards}
-          >
+          <div className={styles.floatingCards}>
             <div className={`${styles.card} ${styles.card1}`}>
-              <img src="/images/ProcurementManagement/p1.png" alt="" />
+              <img src="/images/SupportTicketManagement/s1.png" alt="s1" />
             </div>
             <div className={`${styles.card} ${styles.card2}`}>
-              <img
-                src="/images/ProcurementManagement/p2.png"
-                alt=""
-                style={{ height: "50px", width: "50px" }}
-              />
+              <img src="/images/SupportTicketManagement/s2.png" alt="s2" />
             </div>
             <div className={`${styles.card} ${styles.card3}`}>
-              <img src="/images/ProcurementManagement/p3.png" alt="" />
+              <img src="/images/SupportTicketManagement/s12.png" alt="s3" />
             </div>
             <div className={`${styles.card} ${styles.card4}`}>
-              <img src="/images/ProcurementManagement/p4.png" alt="" />
+              <img src="/images/SupportTicketManagement/s4.png" alt="s4" />
             </div>
             <div className={`${styles.card} ${styles.card5}`}>
-              <img
-                src="/images/ProcurementManagement/p5.png"
-                alt=""
-                style={{ height: "50px", width: "50px" }}
-              />
+              <img src="/images/SupportTicketManagement/s8.png" alt="s5" />
             </div>
             <div className={`${styles.card} ${styles.card6}`}>
-              <img
-                src="/images/ProcurementManagement/p6.png"
-                alt=""
-                style={{ height: "60px", width: "60px" }}
-              />
+              <img src="/images/SupportTicketManagement/s6.png" alt="s6" />
+            </div>
+            <div className={`${styles.card} ${styles.card7}`}>
+              <img src="/images/SupportTicketManagement/s15.png" alt="s7" />
             </div>
             <div className={`${styles.card} ${styles.card8}`}>
-              <img
-                src="/images/ProcurementManagement/p8.png"
-                alt=""
-                style={{ height: "100px", width: "70px" }}
-              />
+              <img src="/images/SupportTicketManagement/s10.png" alt="s8" />
+            </div>
+            <div className={`${styles.card} ${styles.card9}`}>
+              <img src="/images/SupportTicketManagement/s11.png" alt="s9" />
+            </div>
+            <div className={`${styles.card} ${styles.card10}`}>
+              <img src="/images/SupportTicketManagement/s13.png" alt="s10" />
             </div>
             <div className={`${styles.card} ${styles.card14}`}>
-              <img
-                src="/images/ProcurementManagement/p11.png"
-                alt=""
-                style={{ height: "80px", width: "80px" }}
-              />
-            </div>
-            <div className={`${styles.card} ${styles.card16}`}>
-              <img
-                src="/images/ProcurementManagement/p7.png"
-                alt=""
-                style={{ height: "60px", width: "100px" }}
-              />
+              <img src="/images/SupportTicketManagement/s5.png" alt="s14" />
             </div>
             <div className={`${styles.card} ${styles.card15}`}>
-              <img
-                src="/images/ProcurementManagement/vendor-management.png"
-                alt=""
-              />
+              <img src="/images/SupportTicketManagement/s3.png" alt="s15" />
             </div>
-            <div className={`${styles.card} ${styles.card17}`}>
-              <img
-                src="/images/ProcurementManagement/p12.png"
-                alt=""
-                style={{ height: "50px", width: "50px" }}
-              />
+            <div className={`${styles.card} ${styles.card16}`}>
+              <img src="/images/SupportTicketManagement/s14.png" alt="s16" />
             </div>
           </div>
         </div>
-        <div className={styles.dottedSeparator}></div>
 
-        {/* Right */}
+        <div className={styles.dottedSeparator}></div>
         <div className={styles.animationList}>
-          {issues.map((issue, i) => (
-            <div key={i} className={styles.animationItem}>
+          {issues.map((issue, index) => (
+            <div className={styles.animationItem} key={index}>
               <strong>{issue.title}</strong>
               {issue.desc}
             </div>
@@ -174,4 +143,4 @@ const ProcurementManagement = () => {
   );
 };
 
-export default ProcurementManagement;
+export default SupportTicketManagement;

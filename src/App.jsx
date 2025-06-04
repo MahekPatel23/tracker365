@@ -3,6 +3,7 @@ import HardwareLifeCycle from './components/HardwareLifeCycle/HardwareLifeCycle'
 import Header from './components/Header/Header'
 import ProcurementManagement from './components/ProcurementManagement/ProcurementManagement'
 import SoftwareSubscriptionManagement from './components/SoftwareSubscriptionManagement/SoftwareSubscriptionManagement'
+import SupportTicketManagement from './components/SupportTicketManagement/SupportTicketManagement'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <SoftwareSubscriptionManagement />
       <ProcurementManagement />
       <HardwareLifeCycle />
+      <SupportTicketManagement />
     </div>
   )
 }
