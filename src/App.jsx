@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer/Footer'
 import HardwareLifeCycle from './components/HardwareLifeCycle/HardwareLifeCycle'
 import Header from './components/Header/Header'
 import ProcurementManagement from './components/ProcurementManagement/ProcurementManagement'
@@ -14,6 +15,7 @@ function App() {
       <ProcurementManagement />
       <HardwareLifeCycle />
       <SupportTicketManagement />
+      <Footer />
     </div>
   )
 }
