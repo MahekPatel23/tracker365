@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/Header/Header'
+import ProcurementManagement from './components/ProcurementManagement/ProcurementManagement'
 import SoftwareSubscriptionManagement from './components/SoftwareSubscriptionManagement/SoftwareSubscriptionManagement'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <SoftwareSubscriptionManagement />
+      <ProcurementManagement />
     </>
   )
 }

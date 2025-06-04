@@ -1,12 +1,13 @@
-.wrapper {
+.page {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", "Poppins", sans-serif;
+  background-color: #f8faff;
+  height: 100vh;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Rubik", "Poppins", sans-serif;
-  background-color: #f8faff;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 .pageHeading {
@@ -80,7 +81,6 @@
   object-fit: contain;
 }
 
-/* Position variables */
 .card1 {
   --x: -133px;
   --y: -337px;
@@ -94,15 +94,15 @@
   --y: -198px;
 }
 .card4 {
-  --x: 226px;
-  --y: -177px;
+  --x: 160px;
+  --y: -189px;
 }
 .card5 {
   --x: -87px;
   --y: -267px;
 }
 .card6 {
-  --x: -260px;
+  --x: -230px;
   --y: -170px;
 }
 .card7 {
@@ -110,7 +110,7 @@
   --y: -219px;
 }
 .card8 {
-  --x: -226px;
+  --x: -200px;
   --y: -267px;
 }
 .card9 {
@@ -122,37 +122,20 @@
   --y: -341px;
 }
 .card14 {
-  --x: 100px;
-  --y: -253px;
+  --x: 139px;
+  --y: -263px;
 }
 .card15 {
-  --x: 183px;
-  --y: -265px;
+  --x: 6px;
+  --y: -208px;
 }
 .card16 {
   --x: -20px;
   --y: -368px;
 }
-
-.a {
-  height: 80px;
-  width: 80px;
-}
-.b {
-  height: 80px;
-  width: 100px;
-}
-.c {
-  height: 100px;
-  width: 100px;
-}
-.d {
-  height: 70px;
-  width: 80px;
-}
-.e {
-  height: 70px;
-  width: 100px;
+.card17 {
+  --x: 97px;
+  --y: -345px;
 }
 
 @keyframes zoomIn {
@@ -187,7 +170,7 @@
   width: 500px;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding-bottom: 80px;
+  padding-bottom: 80px; /* Fix for last card visibility */
 }
 
 .animationList::-webkit-scrollbar {
@@ -210,7 +193,7 @@
 }
 
 .animationItem:last-child {
-  margin-bottom: 80px;
+  margin-bottom: 80px; /* Additional margin for last item */
 }
 
 .animationItem::before {
@@ -260,6 +243,7 @@
   border-left: 3px dotted #3a82f7;
   opacity: 0.6;
   animation: fadeIn 1.5s ease-in-out;
+  padding-right: -20px;
 }
 
 @keyframes fadeIn {
@@ -272,8 +256,6 @@
     transform: scaleY(1);
   }
 }
-
-/* Responsive Design */
 @media (max-width: 1199px) {
   .mainWrapper {
     flex-direction: column;
@@ -297,13 +279,13 @@
   }
 
   .floatingCards .card {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .floatingCards .card img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .card1 {
@@ -383,17 +365,5 @@
 
   .animationItem strong {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .centerImage {
-    width: 150px;
-  }
-
-  .floatingCards .card,
-  .floatingCards .card img {
-    width: 32px;
-    height: 32px;
   }
 }

@@ -17,12 +17,36 @@ const dotsData = [
 ];
 
 const cardsData = [
-  { className: "card1", icon: "fa-solid fa-calendar-check", text: "SOFTWARE SUBSCRIPTION\nMANAGEMENT" },
-  { className: "card2", icon: "fa-solid fa-boxes-packing", text: "HARDWARE LIFE CYCLE\nMANAGEMENT" },
-  { className: "card3", icon: "fa-solid fa-handshake", text: "PROCUREMENT\nMANAGEMENT" },
-  { className: "card4", icon: "fa-solid fa-chart-bar", text: "SERVICE CONTRACT\nMANAGEMENT" },
-  { className: "card5", icon: "fa-solid fa-ticket", text: "ADVANCE SUPPORT\nTICKETS\nMANAGEMENT" },
-  { className: "card6", icon: "fa-solid fa-file-lines", text: "REPORT\nMANAGEMENT" },
+  {
+    className: "card1",
+    icon: "fa-solid fa-calendar-check",
+    text: "SOFTWARE SUBSCRIPTION\nMANAGEMENT",
+  },
+  {
+    className: "card2",
+    icon: "fa-solid fa-boxes-packing",
+    text: "HARDWARE LIFE CYCLE\nMANAGEMENT",
+  },
+  {
+    className: "card3",
+    icon: "fa-solid fa-handshake",
+    text: "PROCUREMENT\nMANAGEMENT",
+  },
+  {
+    className: "card4",
+    icon: "fa-solid fa-chart-bar",
+    text: "SERVICE CONTRACT\nMANAGEMENT",
+  },
+  {
+    className: "card5",
+    icon: "fa-solid fa-ticket",
+    text: "ADVANCE SUPPORT\nTICKETS\nMANAGEMENT",
+  },
+  {
+    className: "card6",
+    icon: "fa-solid fa-file-lines",
+    text: "REPORT\nMANAGEMENT",
+  },
 ];
 
 const Header = () => {
@@ -43,8 +67,9 @@ const Header = () => {
           Assets to Support...
         </h2>
         <p>
-          "A Comprehensive Business Management Solution for Streamlined Procurement,
-          Asset Tracking, Subscription Management, and Support Ticket Resolution."
+          "A Comprehensive Business Management Solution for Streamlined
+          Procurement, Asset Tracking, Subscription Management, and Support
+          Ticket Resolution."
         </p>
         <a href="#" className={styles.ctaButton}>
           Take A Demo
@@ -66,10 +91,7 @@ const Header = () => {
 
         <div className="floating-cards">
           {cardsData.map(({ className, icon, text }, idx) => (
-            <div
-              key={idx}
-              className={`${styles.card} ${styles[className]}`}
-            >
+            <div key={idx} className={`${styles.card} ${styles[className]}`}>
               <i className={icon}></i>
               {text.split("\n").map((line, idx2) => (
                 <React.Fragment key={idx2}>
