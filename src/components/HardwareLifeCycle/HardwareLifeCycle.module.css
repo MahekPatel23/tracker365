@@ -1,10 +1,8 @@
-.page {
-  margin: 0;
+.wrapper {
+  margin: 0px;
   padding: 0;
   font-family: "Rubik", "Poppins", sans-serif;
   background-color: #f8faff;
-  /* height: 100vh; */
-  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +33,7 @@
 .container {
   position: relative;
   width: 460px;
-  height: 460px;
+  height: 460px;  
   margin-left: -30px;
   overflow: visible;
   display: flex;
@@ -82,6 +80,39 @@
   object-fit: contain;
 }
 
+.img100 {
+  height: 100px;
+  width: 100px;
+}
+.img60x60 {
+  height: 60px;
+  width: 60px;
+}
+.img80x100 {
+  height: 80px;
+  width: 100px;
+}
+.img90x90 {
+  height: 90px;
+  width: 90px;
+}
+.img130x90 {
+  height: 130px;
+  width: 90px;
+}
+.img60x80 {
+  height: 60px;
+  width: 80px;
+}
+.img130 {
+  height: 130px;
+  width: 130px;
+}
+.img60x100 {
+  height: 60px;
+  width: 80px;
+}
+
 .card1 {
   --x: -133px;
   --y: -337px;
@@ -95,15 +126,15 @@
   --y: -198px;
 }
 .card4 {
-  --x: 160px;
-  --y: -189px;
+  --x: 226px;
+  --y: -177px;
 }
 .card5 {
   --x: -87px;
   --y: -267px;
 }
 .card6 {
-  --x: -230px;
+  --x: -260px;
   --y: -170px;
 }
 .card7 {
@@ -111,7 +142,7 @@
   --y: -219px;
 }
 .card8 {
-  --x: -200px;
+  --x: -226px;
   --y: -267px;
 }
 .card9 {
@@ -123,20 +154,16 @@
   --y: -341px;
 }
 .card14 {
-  --x: 139px;
-  --y: -263px;
+  --x: 100px;
+  --y: -253px;
 }
 .card15 {
-  --x: 6px;
-  --y: -208px;
+  --x: 183px;
+  --y: -265px;
 }
 .card16 {
   --x: -20px;
   --y: -368px;
-}
-.card17 {
-  --x: 97px;
-  --y: -345px;
 }
 
 @keyframes zoomIn {
@@ -280,13 +307,13 @@
   }
 
   .floatingCards .card {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .floatingCards .card img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .card1 {
@@ -317,6 +344,7 @@
     --x: -92px;
     --y: -62px;
   }
+
   .card8 {
     --x: -147px;
     --y: -125px;
@@ -366,5 +394,17 @@
 
   .animationItem strong {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .centerImage {
+    width: 150px;
+  }
+
+  .floatingCards .card,
+  .floatingCards .card img {
+    width: 32px;
+    height: 32px;
   }
 }
