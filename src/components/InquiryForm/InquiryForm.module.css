@@ -1,0 +1,171 @@
+.body {
+  margin: 0;
+  background-color: #f8faff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  background-color: #134884;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  border-radius: 10px 10px 0 0;
+}
+
+.formSection {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 85, 170, 0.1);
+  overflow: hidden;
+}
+
+form {
+  padding: 40px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #002b5c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #cce6ff;
+  border-radius: 8px;
+  background-color: #f7fbff;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #66c2ff;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.submitContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submitBtn {
+  background-color: #004aad;
+  color: white;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #ffffff;
+  color: #004aad;
+  border: 1px solid black;
+}
+
+/* Extra Small Devices (0 - 479px) */
+@media (max-width: 479px) {
+  .header {
+    font-size: 1.4rem;
+    padding: 20px 0;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    width: 100%;
+  }
+}
+
+/* Small Devices (480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .header {
+    font-size: 1.6rem;
+    padding: 25px 0;
+  }
+
+  form {
+    padding: 25px;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Medium Devices (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .formGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  form {
+    padding: 30px;
+  }
+
+  .header {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large Devices (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .formGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  form {
+    padding: 35px;
+  }
+}
+
+/* Extra Large Devices (1200px and above) */
+@media (min-width: 1200px) {
+  .formGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
