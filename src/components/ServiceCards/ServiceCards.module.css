@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.pageWrapper {
+  font-family: "Segoe UI", sans-serif;
+  background: #f8faff;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.servicesSection {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.servicesSection h2 {
+  color: #004aad;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.servicesSection .subheading {
+  color: #004aad;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.serviceCard {
+  position: relative;
+  background: #ffffff;
+  padding: 30px 20px 40px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 330px;
+  max-width: 300px;
+  box-sizing: border-box;
+  cursor: default;
+  margin: auto;
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.35);
+}
+
+.serviceCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(270deg, #007bff, #339cff, #0056b3, #007bff);
+  background-size: 600% 600%;
+  z-index: -1;
+  animation: borderAnim 8s ease infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  box-sizing: border-box;
+}
+
+@keyframes borderAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 18px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px #007bff);
+}
+
+.serviceCard h3 {
+  font-family: "Rubik", sans-serif;
+  color: #004aad;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.serviceCard p {
+  font-family: "Rubik", sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+
+/* Extra Small Devices (0 - 479px) */
+@media (max-width: 479px) {
+  .servicesSection {
+    padding: 40px 10px;
+  }
+
+  .servicesSection h2 {
+    font-size: 24px;
+  }
+
+  .servicesSection .subheading {
+    font-size: 14px;
+  }
+
+  .serviceCard {
+    padding: 20px 15px 30px;
+    min-height: 300px;
+    max-width: 100%;
+  }
+
+  .serviceCard h3 {
+    font-size: 16px;
+  }
+
+  .serviceCard p {
+    font-size: 14px;
+  }
+
+  .cardIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small Devices (480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .servicesSection {
+    padding: 50px 15px;
+  }
+
+  .servicesSection h2 {
+    font-size: 28px;
+  }
+
+  .servicesSection .subheading {
+    font-size: 16px;
+  }
+
+  .serviceCard {
+    padding: 25px 18px 35px;
+    min-height: 310px;
+    max-width: 100%;
+  }
+
+  .serviceCard h3 {
+    font-size: 17px;
+  }
+
+  .serviceCard p {
+    font-size: 15px;
+  }
+
+  .cardIcon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Medium Devices (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Devices (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+  .servicesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

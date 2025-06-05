@@ -3,6 +3,7 @@ import Footer from './components/Footer/Footer'
 import HardwareLifeCycle from './components/HardwareLifeCycle/HardwareLifeCycle'
 import Header from './components/Header/Header'
 import ProcurementManagement from './components/ProcurementManagement/ProcurementManagement'
+import ServiceCards from './components/ServiceCards/ServiceCards.'
 import ServiceContractManagement from './components/ServiceContractManagement/ServiceContractManagement'
 import SoftwareSubscriptionManagement from './components/SoftwareSubscriptionManagement/SoftwareSubscriptionManagement'
 import SupportTicketManagement from './components/SupportTicketManagement/SupportTicketManagement'
@@ -17,6 +18,7 @@ function App() {
       <HardwareLifeCycle />
       <SupportTicketManagement />
       <ServiceContractManagement />
+      <ServiceCards />
       <Footer />
     </div>
   )
